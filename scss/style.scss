@@ -5,5 +5,25 @@
 }
 
 body {
-    background-color: #f2baf7b8;
+    font-family: "Montserrat Alternates", sans-serif;
+    
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+    background-image: url(../img/bg.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    .img {
+        position: absolute;
+        top: 46px;
+        right: 30px;
+        height: 900px;
+    }
 }
