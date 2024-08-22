@@ -1,3 +1,5 @@
+@import './animation';
+
 * {
     margin: 0;
     padding: 0;
@@ -6,12 +8,6 @@
 
 body {
     font-family: "Montserrat Alternates", sans-serif;
-    
-}
-
-.container {
-    position: relative;
-    height: 100vh;
     background-image: url(../img/bg.png);
     background-repeat: no-repeat;
     background-position: center center;
@@ -20,10 +16,53 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    .img {
+}
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    max-width: 1480px;
+    padding: 0 20px 0 230px;
+    gap: 50px;
+}
+.img {
+    height: 780px;
+    &-for-head {
         position: absolute;
-        top: 46px;
-        right: 30px;
-        height: 900px;
+        top: 70px;
+        right: 300px;
+    }
+}
+.main {
+    max-width: 840px;
+    .title {
+        font-size: 47px;
+        color: #5a4134;
+        margin-bottom: 55px;
+    }
+    .descr {
+        font-size: 18px;
+        span {
+            font-weight: 700;
+            color: #5a4134;
+        }
+    }
+    .countdown {
+        margin-bottom: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        text-align: center;
+        font-size: 18px;
+        color: #ffffff;
+        max-width: 500px;
+        &__item {
+            background-color: #5a4134;
+            padding: 10px;
+            width: 110px;
+            border-radius: 8px;
+        }
     }
 }
